@@ -1,0 +1,68 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: kids-programming-backend
+  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kids_programming?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:schema.sql
+      continue-on-error: true
+  
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+  mail:
+    host: ${MAIL_HOST:smtp.qq.com}
+    port: ${MAIL_PORT:465}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: ${MAIL_SSL_ENABLE:true}
+          starttls:
+            enable: ${MAIL_STARTTLS_ENABLE:false}
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath*:/mapper/**/*.xml
+
+logging:
+  level:
+    root: INFO
+    com.kidsprogramming: DEBUG
+  
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n'
+
+app:
+  mail:
+    enabled: ${MAIL_ENABLED:false}
+    from-address: ${MAIL_FROM_ADDRESS:${MAIL_USERNAME:}}
+    test-mode: ${MAIL_TEST_MODE:false}
+    test-api-enabled: ${MAIL_TEST_API_ENABLED:false}
+    verification-code-expire-minutes: ${MAIL_CODE_EXPIRE_MINUTES:10}
+    verification-code-cooldown-seconds: ${MAIL_CODE_COOLDOWN_SECONDS:60}

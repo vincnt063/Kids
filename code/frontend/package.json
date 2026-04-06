@@ -1,0 +1,30 @@
+{
+  "name": "kids-programming-frontend",
+  "version": "1.0.0",
+  "description": "儿童编程学习网站前端",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "smoke": "node scripts/blockly-smoke.cjs",
+    "e2e": "playwright test --reporter=line",
+    "e2e:headed": "playwright test --headed --workers=1 --reporter=line",
+    "e2e:visible": "node scripts/run-playwright-visible.cjs",
+    "e2e:ui": "playwright test --ui"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "blockly": "^10.0.0",
+    "element-plus": "^2.4.0",
+    "pinia": "^2.1.6",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "playwright": "^1.58.2",
+    "vite": "^4.4.9"
+  }
+}

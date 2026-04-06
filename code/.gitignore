@@ -1,0 +1,9 @@
+frontend/node_modules/
+frontend/dist/
+backend/target/
+backend/mail.local.ps1
+
+.idea/
+.vscode/
+*.log
+logs/*.pid

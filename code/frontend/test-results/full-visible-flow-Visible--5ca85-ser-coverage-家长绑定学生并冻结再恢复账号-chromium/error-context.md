@@ -1,0 +1,142 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - button "返回首页" [ref=e7] [cursor=pointer]
+      - generic [ref=e8]: 家长中心
+      - heading "e2ep1774268241852142 的学生管理" [level=1] [ref=e9]
+      - paragraph [ref=e10]: 绑定学生账号后，可以查看学习进度、最近学习记录，并冻结或启用学生账号。
+    - generic [ref=e11]:
+      - generic [ref=e12]: 当前账号：e2ep1774268241852142
+      - button "退出登录" [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: 退出登录
+  - generic [ref=e15]:
+    - article [ref=e16]:
+      - text: 已绑定学生
+      - strong [ref=e17]: 1/3
+      - paragraph [ref=e18]: 每个家长账号最多绑定 3 个学生账号。
+    - article [ref=e19]:
+      - text: 可继续绑定
+      - strong [ref=e20]: "2"
+      - paragraph [ref=e21]: 绑定时必须输入学生账号和密码。
+    - article [ref=e22]:
+      - text: 已启用
+      - strong [ref=e23]: "0"
+      - paragraph [ref=e24]: 启用中的学生可以继续正常登录学习。
+    - article [ref=e25]:
+      - text: 已冻结
+      - strong [ref=e26]: "1"
+      - paragraph [ref=e27]: 冻结后学生登录会被拦截，家长可随时恢复。
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: 绑定学生
+        - heading "输入学生账号和密码" [level=2] [ref=e32]
+        - paragraph [ref=e33]: 为了确认绑定关系，家长需要填写学生账号和密码进行校验。
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: "*学生账号"
+          - textbox "*学生账号" [ref=e40]:
+            - /placeholder: 请输入学生账号
+        - generic [ref=e41]:
+          - generic [ref=e42]: "*学生密码"
+          - textbox "*学生密码" [ref=e46]:
+            - /placeholder: 请输入学生密码
+        - button "绑定学生账号" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]: 绑定学生账号
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]: 操作说明
+        - heading "家长可查看并管理账号" [level=2] [ref=e52]
+        - paragraph [ref=e53]: 页面会展示每个学生的完成关卡、累计星级、最近学习记录，以及当前账号状态。
+      - generic [ref=e54]:
+        - article [ref=e55]:
+          - strong [ref=e56]: 查看进度
+          - paragraph [ref=e57]: 完成关卡数、总星级、等级和每关状态都会直接显示。
+        - article [ref=e58]:
+          - strong [ref=e59]: 管理账号
+          - paragraph [ref=e60]: 每个已绑定学生都可以单独冻结或重新启用。
+        - article [ref=e61]:
+          - strong [ref=e62]: 演示账号
+          - paragraph [ref=e63]:
+            - strong [ref=e64]: parent_demo / parent123
+            - text: 已预绑定
+            - strong [ref=e65]: all_pass_demo / 123456
+            - text: 。
+  - generic [ref=e66]:
+    - generic [ref=e67]:
+      - generic [ref=e68]: 已绑定学生
+      - heading "学习进度与账号状态" [level=2] [ref=e69]
+      - paragraph [ref=e70]: 每个学生都会显示学习概览、分关卡状态和最近学习记录。
+    - article [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - strong [ref=e76]: e2ec1774268241852523
+            - generic [ref=e77]: 已冻结
+          - paragraph [ref=e78]: 已完成 0/10 关，累计 0 颗星星。
+        - button "启用账号" [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]: 启用账号
+      - generic [ref=e81]:
+        - article [ref=e82]:
+          - text: 完成率
+          - strong [ref=e83]: 0%
+        - article [ref=e84]:
+          - text: 等级
+          - strong [ref=e85]: Lv.1
+        - article [ref=e86]:
+          - text: 积分
+          - strong [ref=e87]: "0"
+        - article [ref=e88]:
+          - text: 最近记录
+          - strong [ref=e89]: "0"
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - heading "关卡进度" [level=3] [ref=e92]
+          - generic [ref=e93]:
+            - article [ref=e94]:
+              - text: 第 1 关
+              - strong [ref=e95]: 小猫回家
+              - paragraph [ref=e96]: 未完成
+            - article [ref=e97]:
+              - text: 第 2 关
+              - strong [ref=e98]: 收集星星
+              - paragraph [ref=e99]: 未完成
+            - article [ref=e100]:
+              - text: 第 3 关
+              - strong [ref=e101]: 避开障碍
+              - paragraph [ref=e102]: 未完成
+            - article [ref=e103]:
+              - text: 第 4 关
+              - strong [ref=e104]: 认识坐标
+              - paragraph [ref=e105]: 未完成
+            - article [ref=e106]:
+              - text: 第 5 关
+              - strong [ref=e107]: 画正方形
+              - paragraph [ref=e108]: 未完成
+            - article [ref=e109]:
+              - text: 第 6 关
+              - strong [ref=e110]: 循环收集
+              - paragraph [ref=e111]: 未完成
+            - article [ref=e112]:
+              - text: 第 7 关
+              - strong [ref=e113]: 嵌套循环
+              - paragraph [ref=e114]: 未完成
+            - article [ref=e115]:
+              - text: 第 8 关
+              - strong [ref=e116]: if 判断
+              - paragraph [ref=e117]: 未完成
+            - article [ref=e118]:
+              - text: 第 9 关
+              - strong [ref=e119]: switch 选择
+              - paragraph [ref=e120]: 未完成
+            - article [ref=e121]:
+              - text: 第 10 关
+              - strong [ref=e122]: 等待 + switch
+              - paragraph [ref=e123]: 未完成
+        - generic [ref=e124]:
+          - heading "最近学习记录" [level=3] [ref=e125]
+          - generic [ref=e126]: 还没有学习记录
+```

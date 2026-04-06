@@ -1,0 +1,4 @@
+app:
+  mail:
+    test-mode: true
+    test-api-enabled: true
